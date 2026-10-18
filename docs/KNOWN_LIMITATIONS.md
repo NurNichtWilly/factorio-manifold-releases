@@ -1,6 +1,6 @@
-# Known limitations — 0.11.3
+# Known limitations — 0.11.4 / 0.12.0
 
-Manifold 0.11.3 is a first public preview for Factorio 2.0.77 and newer within the 2.0 series. Space Age and standalone Quality are optional. Factorio 2.1 and arbitrary third-party overhaul compatibility are not claimed. The UI currently has English localization only.
+Manifold is a public preview: 0.11.4 targets Factorio 2.0.77+ in the 2.0 series; 0.12.0 targets Factorio 2.1.22+ in the 2.1 series. Space Age and standalone Quality are optional. The Resource Compressor Extended integration has joint native-game coverage. Arbitrary third-party overhaul compatibility is not claimed. The UI currently has English localization only.
 
 ## Gameplay boundaries
 

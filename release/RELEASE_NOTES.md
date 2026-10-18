@@ -1,11 +1,7 @@
-# Manifold 0.11.3 — reliable recovery
+# Manifold — compressor integration and Factorio 2.1
 
-Fixes a recovery corner case: when a crafting job's escrow was full, Recover returned the stored job items but left its in-flight transfer for a second action even if the player had enough space. Recovery now drains both real inventory owners directly in one action when capacity permits, preserving quality and item totals.
+Pair Manifold with Resource Compressor Extended to transport compressed goods, store them centrally and request production through real compressor inventories. Both mods remain independently usable. The compatibility guide explains machine setup and recipe preferences for reversible or overlapping recipes.
 
-The analyzer button and `/manifold recover` now report exact returned and remaining counts. They distinguish remaining stock due to inventory capacity from the absence of a character inventory. Existing integrations still receive a numeric recovered count; `recovery_status(player_index)` adds a read-only breakdown.
+The Factorio 2.1 branch uses the unified crafter inventory identifiers and the supported script-disable API for controller animation and cloning. The 2.0 branch retains its existing API compatibility. Both branches passed joint native compressor production, transport and autosave/reload checks with and without Space Age; existing Lua suites and compression-specific dependency tests passed.
 
-## Install
-
-Download **manifold_0.11.3.zip**, put it unextracted in the Factorio mods directory and enable Manifold. The adjacent SHA-256 file verifies the download. GitHub's automatic source archives are not installable mods.
-
-This remains a public preview for Factorio **2.0.77+ within 2.0**; Factorio 2.1 is not supported. Space Age and standalone Quality remain optional. Multiplayer, full platform voyages and the remaining original-spec features are still unverified or incomplete as documented in Known Limitations.
+This remains a public preview. Multiplayer, long campaigns and arbitrary overhaul combinations remain unverified. See Known Limitations.

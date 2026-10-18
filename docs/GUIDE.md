@@ -1,6 +1,6 @@
 # Manifold player guide
 
-For Manifold 0.11.3 on Factorio 2.0.77 or newer in the 2.0 series.
+For Manifold 0.11.4 on Factorio 2.0.77+ or Manifold 0.12.0 on Factorio 2.1.22+. Use the package matching your game series.
 
 ## First network
 

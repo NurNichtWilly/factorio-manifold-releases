@@ -1,3 +1,7 @@
+# 0.11.4 / 0.12.0
+
+Resource Compressor Extended integration and separate Factorio 2.0/2.1 packages. Crafting and machine endpoints support the unified 2.1 crafter inventories. Native controller animation now uses disabled_by_script, supported by both game lines; active is read only in 2.1. See docs/FACCOMPRESS.md.
+
 # v0.11.3 — 2026-10-18
 
 - Recover pending crafting-transfer goods directly alongside job-owned stock, even when the job escrow is full.

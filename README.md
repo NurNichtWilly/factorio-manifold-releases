@@ -4,7 +4,7 @@
 
 **From copper conduits to a connected factory.** Manifold adds powered item networks, portable storage and production requests fulfilled by real Factorio machines. Research improves existing networks; better controllers and conduits raise their limits. Belts, trains and inserters still have work to do.
 
-**Public preview · v0.11.3 · Factorio 2.0.77+ within the 2.0 series · Space Age optional · English UI**
+**Public preview · Factorio 2.0 & 2.1 · Space Age optional · English UI**
 
 [Download releases](https://github.com/NurNichtWilly/factorio-manifold-releases/releases) · [Report a bug](https://github.com/NurNichtWilly/factorio-manifold-releases/issues/new/choose) · [Player guide](docs/GUIDE.md) · [Known limitations](docs/KNOWN_LIMITATIONS.md)
 
@@ -21,16 +21,25 @@
 
 ![Machine crafting and production monitoring in Factorio](release/media/crafting-ui.png)
 
+## Resource Compressor Extended
+
+Pair Manifold with [Resource Compressor Extended](https://mods.factorio.com/mod/faccompress) to transport compact bundles, store them centrally and request compression through real machines. The mods share an industrial visual style and also work independently. [Compatibility and setup](docs/FACCOMPRESS.md).
+
 ## Install
 
-1. Download `manifold_0.11.3.zip` from the release assets. GitHub's automatic **Source code** archives contain this release website, not an installable mod.
+| Your Factorio version | Manifold download | Optional compressor companion |
+| --- | --- | --- |
+| **2.0.77+ in the 2.0 series** | [0.11.4](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.11.4/manifold_0.11.4.zip) | [Resource Compressor 3.0.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.0.0) |
+| **2.1.22+ in the 2.1 series** | [0.12.0](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.12.0/manifold_0.12.0.zip) | [Resource Compressor 3.1.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.1.0) |
+
+1. Download the ZIP for your game version. GitHub's automatic **Source code** archives are not installable mods.
 2. Put the ZIP, without extracting it, in your Factorio `mods` folder.
 3. Enable **Manifold** in Mods and restart Factorio.
 4. Start a game or load a backed-up save. Research **Basic Manifold networks** after Automation.
 
 Mod folders: Windows `%APPDATA%\Factorio\mods`; macOS `~/Library/Application Support/factorio/mods`; Linux `~/.factorio/mods`.
 
-Factorio **2.1 is not supported by this release**. Space Age and Quality are optional. This is an early public preview: multiplayer, long campaigns and arbitrary overhaul-mod combinations have not been fully validated.
+Space Age and Quality are optional. Both game branches passed joint compressor production, transport and save/reload tests, with and without Space Age. This is an early public preview: multiplayer, long campaigns and arbitrary overhaul combinations have not been fully validated.
 
 ## Your first network
 
