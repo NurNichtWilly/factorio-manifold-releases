@@ -20,7 +20,7 @@
     "release/RELEASE_NOTES.md": "79c407dac1386fc20f4fa0b9054d3cc50392bc24367f1914f524f8c77370c18c",
     "release/media/crafting-network.png": "3a38231f8b1abfddbd41d82f7a7443e35cf0cf11717330cb4ba2a424bdc72671",
     "release/media/crafting-ui.png": "b86728c1cfd22bcd5ab480ad1348e439be32a0f4d0057c8925427db20b96457b",
-    "release/media/hardware.png": "dd21299550982ca200b5f0d7d40c8074e2d5a7bea8820724614231220fde0831",
+    "release/media/hardware.png": "9b7c10033b5eac9212230d91aefc38dc66dd614603ed059bb10218587a1dda14",
     "release/media/machinery-60fps.mp4": "88ca9947bb8b495ac1b0cbba9c940c5e2a59d11bb6630a0986355f7f24dc607f",
     "release/media/machinery-in-game.png": "1691486a4c57f1938a1f4fed64af951eaf1f58c037d3b6e97a7c92383b720e45",
     "release/media/regional-ui.png": "b413896da8b0a1509d0e354432f3503499b91bf2063665d6dd9226abdbebe59c",
@@ -29,7 +29,7 @@
   },
   "release_asset": {
     "filename": "manifold_0.11.2.zip",
-    "sha256": "c1bf1061f18a66f6860e9628cb461d77eebe177ae723e89ce237fb2df92bd052",
-    "size": 80609746
+    "sha256": "422205d88559dbc626f3988b371574b0e96573b105972adaf606f864221ac5e0",
+    "size": 81962853
   }
 }
