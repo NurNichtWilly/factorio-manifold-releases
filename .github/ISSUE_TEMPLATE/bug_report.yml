@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible Manifold problem.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Factorio and Manifold versions
+      placeholder: Factorio 2.0.77, Manifold 0.11.2
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Enabled mods
+      description: Include Space Age/Quality and any other mods.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include multiplayer status, expected behavior and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Save, screenshots and log
+      description: Attach evidence when useful. Review it for private information before posting.

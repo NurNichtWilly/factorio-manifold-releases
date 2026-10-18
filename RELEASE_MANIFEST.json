@@ -1,0 +1,35 @@
+{
+  "version": "0.11.2",
+  "purpose": "Released documentation and media only; install the mod from release assets.",
+  "files": {
+    ".github/ISSUE_TEMPLATE/bug_report.yml": "831eaf3d15cde3d903393ef68be28dddb2f93f1460d3cc8af3fe5fca011e0404",
+    ".github/ISSUE_TEMPLATE/config.yml": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+    ".github/ISSUE_TEMPLATE/feature_request.yml": "91489baba3d519f09da5b272297669fff8b9787e2a1909a986c1fb607d55933c",
+    "CHANGELOG.md": "8edb35cc32c9fc9296034033428f5fddd9a9af19718870fa70fb0574b5a9502a",
+    "LICENSE": "c055240bf0989a8354ee0ff78ffcb17c2f2550facb57e3543aacb0b3c08936b2",
+    "README.md": "02d32bad9fab892e7196394c9e5d89ac1ae4436c412b684a1f403330881ff5c6",
+    "docs/CRAFTING.md": "ab237d17c9e589c5b7634d5f524ce23c6caf1a0617be5ae0cd262a5326000a52",
+    "docs/ENDGAME.md": "63b8aad559a74d6e1c3e9ed8e6dfd2dfe4d87d6cc325194d5a8e9985c0d13984",
+    "docs/GUIDE.md": "722164f79a347e615951e8e7e85247e84f0cf7fc26ffa683fc48a45a93121142",
+    "docs/KNOWN_LIMITATIONS.md": "46c0c79fd1d02e556685b676c0f5837a44e7a0907afbc0791eb9f7eba5d96e66",
+    "docs/LOGISTICS.md": "645d03f11c9f5ab70b32aa17353f3a8d06125fde761b8693d5a7159dc2e1cb41",
+    "docs/PROGRESSION.md": "0b710be57da1e6f6d26613758e0e7cf62c7e3fcc5db900103f11ef683e44e769",
+    "docs/REGIONAL.md": "6dc9f5863d5d84913c049b75d55854fbaa2bb3b427f944c7f8507bed4e2ab5bf",
+    "docs/SPACE_AGE.md": "b2c57559295db08f86c76eb14adfcf1ea38ec92f2ec74ad7f273131b1195dd16",
+    "docs/STORAGE.md": "a5793bdc1631e514f45516a0b4d45d051ac901f7a46d2dace8abb78d5a4b0268",
+    "release/RELEASE_NOTES.md": "79c407dac1386fc20f4fa0b9054d3cc50392bc24367f1914f524f8c77370c18c",
+    "release/media/crafting-network.png": "3a38231f8b1abfddbd41d82f7a7443e35cf0cf11717330cb4ba2a424bdc72671",
+    "release/media/crafting-ui.png": "b86728c1cfd22bcd5ab480ad1348e439be32a0f4d0057c8925427db20b96457b",
+    "release/media/hardware.png": "dd21299550982ca200b5f0d7d40c8074e2d5a7bea8820724614231220fde0831",
+    "release/media/machinery-60fps.mp4": "88ca9947bb8b495ac1b0cbba9c940c5e2a59d11bb6630a0986355f7f24dc607f",
+    "release/media/machinery-in-game.png": "1691486a4c57f1938a1f4fed64af951eaf1f58c037d3b6e97a7c92383b720e45",
+    "release/media/regional-ui.png": "b413896da8b0a1509d0e354432f3503499b91bf2063665d6dd9226abdbebe59c",
+    "release/media/thumbnail.png": "8cedfea6b138bb45c84a41128a919d774c0fcaa71c10ebbe44b235963becf71f",
+    "thumbnail.png": "8cedfea6b138bb45c84a41128a919d774c0fcaa71c10ebbe44b235963becf71f"
+  },
+  "release_asset": {
+    "filename": "manifold_0.11.2.zip",
+    "sha256": "c1bf1061f18a66f6860e9628cb461d77eebe177ae723e89ce237fb2df92bd052",
+    "size": 80609746
+  }
+}

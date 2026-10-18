@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest an improvement to Manifold.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to build?
+      description: Describe the gameplay problem and the behavior that would help.
+    validations:
+      required: true
