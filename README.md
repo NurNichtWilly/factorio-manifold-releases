@@ -4,7 +4,7 @@
 
 **From copper conduits to a connected factory.** Manifold adds powered item networks, portable storage and production requests fulfilled by real Factorio machines. Research improves existing networks; better controllers and conduits raise their limits. Belts, trains and inserters still have work to do.
 
-**First public preview · v0.11.2 · Factorio 2.0.77+ within the 2.0 series · Space Age optional · English UI**
+**Public preview · v0.11.3 · Factorio 2.0.77+ within the 2.0 series · Space Age optional · English UI**
 
 [Download releases](https://github.com/NurNichtWilly/factorio-manifold-releases/releases) · [Report a bug](https://github.com/NurNichtWilly/factorio-manifold-releases/issues/new/choose) · [Player guide](docs/GUIDE.md) · [Known limitations](docs/KNOWN_LIMITATIONS.md)
 
@@ -23,7 +23,7 @@
 
 ## Install
 
-1. Download `manifold_0.11.2.zip` from the release assets. GitHub's automatic **Source code** archives contain this release website, not an installable mod.
+1. Download `manifold_0.11.3.zip` from the release assets. GitHub's automatic **Source code** archives contain this release website, not an installable mod.
 2. Put the ZIP, without extracting it, in your Factorio `mods` folder.
 3. Enable **Manifold** in Mods and restart Factorio.
 4. Start a game or load a backed-up save. Research **Basic Manifold networks** after Automation.

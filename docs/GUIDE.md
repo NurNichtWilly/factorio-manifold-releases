@@ -1,6 +1,6 @@
 # Manifold player guide
 
-For Manifold 0.11.2 on Factorio 2.0.77 or newer in the 2.0 series.
+For Manifold 0.11.3 on Factorio 2.0.77 or newer in the 2.0 series.
 
 ## First network
 
@@ -26,7 +26,7 @@ To test interruption, remove a conduit, wait, then rebuild it. Transit packets s
 
 A buffer attached to the network receives input when no output can accept that item and can later feed outputs. Multiple controllers on a connected network disable transport: separate the networks or remove the extra controller.
 
-If an interface or its external chest disappears while items are travelling, its packets become orphaned. Use **Recover orphaned items** in the analyzer, or `/manifold recover`, to retrieve your force's orphaned items into your character inventory. A full character inventory leaves the remainder in escrow. Disconnecting a conduit alone does not orphan a packet. Save and reload while packets are pending to test persistence.
+If an interface or its external chest disappears while items are travelling, its packets become orphaned. Use **Recover orphaned items** in the analyzer, or `/manifold recover`, to retrieve your force's orphaned items into your character inventory. Recovery reports the exact returned and remaining counts. A full character inventory leaves the remainder in escrow; free space and recover again. A spectator without a main inventory receives an explicit explanation. Disconnecting a conduit alone does not orphan a packet. Save and reload while packets are pending to test persistence.
 
 ## Central storage
 

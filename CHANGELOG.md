@@ -1,3 +1,10 @@
+# v0.11.3 — 2026-10-18
+
+- Recover pending crafting-transfer goods directly alongside job-owned stock, even when the job escrow is full.
+- Report exact recovered/remaining counts and distinguish a full main inventory from having no character inventory.
+- Preserve numeric recovery API compatibility; add read-only recovery status for integrations.
+- Validate future release versions and reconcile immutable release artifacts before publishing.
+
 # v0.11.2 — 2026-10-18
 
 - Prepare the first public preview with an in-game/mod-portal thumbnail and current descriptions.
