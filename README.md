@@ -29,8 +29,8 @@ Pair Manifold with [Resource Compressor Extended](https://mods.factorio.com/mod/
 
 | Your Factorio version | Manifold download | Optional compressor companion |
 | --- | --- | --- |
-| **2.0.77+ in the 2.0 series** | [0.11.4](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.11.4/manifold_0.11.4.zip) | [Resource Compressor 3.0.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.0.0) |
-| **2.1.22+ in the 2.1 series** | [0.12.0](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.12.0/manifold_0.12.0.zip) | [Resource Compressor 3.1.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.1.0) |
+| **2.0.77+ in the 2.0 series** | [0.11.5](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.11.5/manifold_0.11.5.zip) | [Resource Compressor 3.0.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.0.0) |
+| **2.1.22+ in the 2.1 series** | [0.12.1](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.12.1/manifold_0.12.1.zip) | [Resource Compressor 3.1.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.1.0) |
 
 1. Download the ZIP for your game version. GitHub's automatic **Source code** archives are not installable mods.
 2. Put the ZIP, without extracting it, in your Factorio `mods` folder.

@@ -1,3 +1,10 @@
+# 0.11.5 / 0.12.1 — 2026-10-21
+
+- Support native infinity chests as input/output, storage-bus and regional chest endpoints.
+- Open the analyzer independently of the character inventory in sandbox controllers; show storage panels independently when no main inventory exists.
+- Preserve native inventory controls for character, god and editor storage interactions, and close standalone windows through normal GUI events.
+- Add native transport, characterless GUI and save/reload regression coverage, including Kux-BlueprintExtensions 4.3.18 with Kux-CoreLib 4.17.10 on Factorio 2.1.22.
+
 # 0.11.4 / 0.12.0
 
 Resource Compressor Extended integration and separate Factorio 2.0/2.1 packages. Crafting and machine endpoints support the unified 2.1 crafter inventories. Native controller animation now uses disabled_by_script, supported by both game lines; active is read only in 2.1. See docs/FACCOMPRESS.md.
