@@ -1,12 +1,12 @@
 # Manifold player guide
 
-For Manifold 0.11.5 on Factorio 2.0.77+ or Manifold 0.12.1 on Factorio 2.1.22+. Use the package matching your game series.
+For Manifold 0.11.6 on Factorio 2.0.77+ or Manifold 0.12.2 on Factorio 2.1.22+. Use the package matching your game series.
 
 ## Sandbox and Blueprint Extensions
 
 Manifold recognizes native infinity chests as external inventories for I/O interfaces, storage buses and regional coordinators. Infinity filters still generate or remove items according to the game's rules. Ordinary item support, filters, network power and bandwidth requirements still apply.
 
-The analyzer opens in its own window when you have no character. Terminal and drive panels also open independently when your controller has no main inventory. God and editor inventories retain native chest controls. Crafting and configuration windows remain available without a character; withdrawals and orphan recovery require a real main inventory. A spectator can inspect the network without receiving items.
+Click a component or use Ctrl+M while pointing at it. Sandbox inputs resolve the entity from the cursor position even if the controller has no synchronized selection. The analyzer opens in its own window when you have no character. Terminal and drive panels also open independently when your controller has no main inventory. God and editor inventories retain native chest controls. Crafting and configuration windows remain available without a character; withdrawals and orphan recovery require a real main inventory. A spectator can inspect the network without receiving items.
 
 The sandbox regression is verified with Kux-BlueprintExtensions 4.3.18 and Kux-CoreLib 4.17.10 on Factorio 2.1.22, plus vanilla Factorio 2.0.77. This covers infinity-chest transport, opening/closing the relevant windows, and save/reload.
 

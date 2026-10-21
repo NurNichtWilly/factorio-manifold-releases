@@ -1,6 +1,6 @@
-# Known limitations — 0.11.5 / 0.12.1
+# Known limitations — 0.11.6 / 0.12.2
 
-Manifold is a public preview: 0.11.5 targets Factorio 2.0.77+ in the 2.0 series; 0.12.1 targets Factorio 2.1.22+ in the 2.1 series. Space Age and standalone Quality are optional. The Resource Compressor Extended integration has joint native-game coverage. Arbitrary third-party overhaul compatibility is not claimed. The UI currently has English localization only.
+Manifold is a public preview: 0.11.6 targets Factorio 2.0.77+ in the 2.0 series; 0.12.2 targets Factorio 2.1.22+ in the 2.1 series. Space Age and standalone Quality are optional. The Resource Compressor Extended integration has joint native-game coverage. Arbitrary third-party overhaul compatibility is not claimed. The UI currently has English localization only.
 
 ## Gameplay boundaries
 

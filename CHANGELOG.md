@@ -1,3 +1,9 @@
+# 0.11.6 / 0.12.2 — 2026-10-21
+
+- Resolve world selection from the input event before opening a component. In a characterless sandbox, a highlighted entity may still be absent from `player.selected`.
+- Apply the correction to ordinary clicks and Ctrl+M; ignore inputs over GUI elements.
+- Add regression tests for the registered input handlers and native selection starting empty in god/editor/spectator modes. The previous patch tested window APIs and missed this input path.
+
 # 0.11.5 / 0.12.1 — 2026-10-21
 
 - Support native infinity chests as input/output, storage-bus and regional chest endpoints.

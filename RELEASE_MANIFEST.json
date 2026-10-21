@@ -1,24 +1,24 @@
 {
-  "version": "0.11.5",
+  "version": "0.11.6",
   "purpose": "Released documentation and media only; install the mod from release assets.",
   "files": {
     ".github/ISSUE_TEMPLATE/bug_report.yml": "fb0aa070dcf6cf7792d5892dfaa4fdf7a91c5f4b4d5b333281ecf730af99e129",
     ".github/ISSUE_TEMPLATE/config.yml": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
     ".github/ISSUE_TEMPLATE/feature_request.yml": "91489baba3d519f09da5b272297669fff8b9787e2a1909a986c1fb607d55933c",
-    "CHANGELOG.md": "76e7d61eb691730cb1cbe01a8d7c863b4833952cfd4e47e3abee667b0f6c9e4a",
+    "CHANGELOG.md": "db4820d9a2972814497f514c4fe7eb2b90ac521526e3717b4a98566fc68e8df5",
     "LICENSE": "c055240bf0989a8354ee0ff78ffcb17c2f2550facb57e3543aacb0b3c08936b2",
-    "README.md": "d274f3b593b1a5a9df503562d686b51ab11e88f400dd9b43d3ccb9dc7349ba9c",
+    "README.md": "78c6daaef03dca2c3d2487c8016b52b42ba9ae3e0e1d3063fc9a8164e25dd1b4",
     "docs/CRAFTING.md": "ab237d17c9e589c5b7634d5f524ce23c6caf1a0617be5ae0cd262a5326000a52",
     "docs/ENDGAME.md": "63b8aad559a74d6e1c3e9ed8e6dfd2dfe4d87d6cc325194d5a8e9985c0d13984",
     "docs/FACCOMPRESS.md": "b8b71b1f3f9344b345c4fc242f8cb3ed734bb7f00e67a0bdb3cb8f21b9481162",
-    "docs/GUIDE.md": "b1c0cdff022441bc6dedcabba61d22c952d07807468a0b41b1ff74f2a791b5ba",
-    "docs/KNOWN_LIMITATIONS.md": "3a61a829ee5af9328c580a7057b3b57739d52afede5145b96532f0b7058412df",
+    "docs/GUIDE.md": "3f412b7e55f50fae2212265291c92a8e5f46a679a3c3955c339ebec059e7d0c3",
+    "docs/KNOWN_LIMITATIONS.md": "8d81af6f93c0cc5c45c723a2ba214541e429f7583ffe5a0a44d86c8062931358",
     "docs/LOGISTICS.md": "645d03f11c9f5ab70b32aa17353f3a8d06125fde761b8693d5a7159dc2e1cb41",
     "docs/PROGRESSION.md": "0b710be57da1e6f6d26613758e0e7cf62c7e3fcc5db900103f11ef683e44e769",
     "docs/REGIONAL.md": "6dc9f5863d5d84913c049b75d55854fbaa2bb3b427f944c7f8507bed4e2ab5bf",
     "docs/SPACE_AGE.md": "b2c57559295db08f86c76eb14adfcf1ea38ec92f2ec74ad7f273131b1195dd16",
     "docs/STORAGE.md": "a5793bdc1631e514f45516a0b4d45d051ac901f7a46d2dace8abb78d5a4b0268",
-    "release/RELEASE_NOTES.md": "d9228e7ca209c140aa4379d46286f7a7c3af976be8fc2fee05b5676b9a10a35a",
+    "release/RELEASE_NOTES.md": "eb88a19e1792617710ce6972dddb8f3faa5981ab90aa25351f90abf112a9ddd8",
     "release/media/crafting-network.png": "3a38231f8b1abfddbd41d82f7a7443e35cf0cf11717330cb4ba2a424bdc72671",
     "release/media/crafting-ui.png": "b86728c1cfd22bcd5ab480ad1348e439be32a0f4d0057c8925427db20b96457b",
     "release/media/hardware.png": "9b7c10033b5eac9212230d91aefc38dc66dd614603ed059bb10218587a1dda14",
@@ -29,24 +29,24 @@
     "thumbnail.png": "8cedfea6b138bb45c84a41128a919d774c0fcaa71c10ebbe44b235963becf71f"
   },
   "release_asset": {
-    "filename": "manifold_0.11.5.zip",
-    "sha256": "2f9af46ce825d7d7c7f4202816922eb2d108fe91940b3d6d30fe614f516c7be0",
-    "size": 81966914
+    "filename": "manifold_0.11.6.zip",
+    "sha256": "8af5019337fbaa4151c664225de52fa070b9021342c7b5fff6a3ce8cfe6768fc",
+    "size": 81968023
   },
   "releases": [
     {
-      "version": "0.11.5",
+      "version": "0.11.6",
       "factorio_version": "2.0",
-      "filename": "manifold_0.11.5.zip",
-      "bytes": 81966914,
-      "sha256": "2f9af46ce825d7d7c7f4202816922eb2d108fe91940b3d6d30fe614f516c7be0"
+      "filename": "manifold_0.11.6.zip",
+      "bytes": 81968023,
+      "sha256": "8af5019337fbaa4151c664225de52fa070b9021342c7b5fff6a3ce8cfe6768fc"
     },
     {
-      "version": "0.12.1",
+      "version": "0.12.2",
       "factorio_version": "2.1",
-      "filename": "manifold_0.12.1.zip",
-      "bytes": 81966946,
-      "sha256": "4e53b663f98b070b12866490fa849cfa5bda552a0fc9568c824dfaf2b6718c17"
+      "filename": "manifold_0.12.2.zip",
+      "bytes": 81968048,
+      "sha256": "734ab3fc90bc98cb59151e607ee04baed957f8cd90977d1d38baf166244d28b8"
     }
   ]
 }
