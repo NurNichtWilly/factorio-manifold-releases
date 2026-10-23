@@ -17,7 +17,7 @@
 - **Regional freight:** coordinate providers, requesters and depot trains. Inserters load and unload real wagons.
 - **Vanilla endgame:** advanced hardware reaches a six-tick minimum local packet delay; default capacity is 160 items/s, or 280 with all bandwidth ranks.
 - **Optional Space Age:** planetary research, freshness-preserving movement between native inventories and native rocket/platform material requests.
-- **Original industrial artwork:** animated operating mechanisms across all thirteen machine families, with paired shadows and 55 direction/design views.
+- **Original industrial artwork:** animated operating mechanisms across all twelve machine families, with paired shadows and 54 direction/design views.
 
 ![Machine crafting and production monitoring in Factorio](release/media/crafting-ui.png)
 
@@ -29,8 +29,8 @@ Pair Manifold with [Resource Compressor Extended](https://mods.factorio.com/mod/
 
 | Your Factorio version | Manifold download | Optional compressor companion |
 | --- | --- | --- |
-| **2.0.77+ in the 2.0 series** | [0.11.6](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.11.6/manifold_0.11.6.zip) | [Resource Compressor 3.0.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.0.0) |
-| **2.1.22+ in the 2.1 series** | [0.12.2](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.12.2/manifold_0.12.2.zip) | [Resource Compressor 3.1.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.1.0) |
+| **2.0.77+ in the 2.0 series** | [0.11.7](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.11.7/manifold_0.11.7.zip) | [Resource Compressor 3.0.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.0.0) |
+| **2.1.22+ in the 2.1 series** | [0.12.3](https://github.com/NurNichtWilly/factorio-manifold-releases/releases/download/v0.12.3/manifold_0.12.3.zip) | [Resource Compressor 3.1.0](https://github.com/NurNichtWilly/factorio-faccompress-releases/releases/tag/v3.1.0) |
 
 1. Download the ZIP for your game version. GitHub's automatic **Source code** archives are not installable mods.
 2. Put the ZIP, without extracting it, in your Factorio `mods` folder.
@@ -65,11 +65,11 @@ Supply the controller from an electric pole and put iron plates in the source ch
 
 Click a component or press **Ctrl+M** over it for diagnostics. Remove and reconnect a conduit to try interruption handling. Destroyed endpoints can leave recoverable items: use **Recover orphaned items** or `/manifold recover`.
 
-Next, unlock central storage and connect a drive with a cell and a terminal. For crafting, connect a CPU, encoder and crafting interfaces beside empty assembling machines with their recipes selected. The [player guide](docs/GUIDE.md) walks through storage, filtering, train setup and crafting.
+Next, unlock central storage and connect a drive with a cell and a terminal. For crafting, connect a CPU and crafting interfaces beside empty assembling machines or furnaces with known recipes. The [player guide](docs/GUIDE.md) walks through storage, filtering, train setup and crafting.
 
 ## Scope of this preview
 
-The core logistics, storage and bounded crafting systems are implemented. The original five-stage design remains a longer-term target; the current game has three transport hardware tiers. Crafting supports deterministic recipes with a single item result and up to eight nonspoilable item ingredients, without modules or positive quality effects. Fluids, furnaces and probabilistic recycling/quality production are outside its current scope.
+The core logistics, storage and bounded crafting systems are implemented. The original five-stage design remains a longer-term target; the current game has three transport hardware tiers. Crafting supports deterministic recipes with a single item result and up to eight nonspoilable item ingredients, without modules or positive quality effects. Fluids and probabilistic recycling/quality production are outside its current scope.
 
 [Known limitations](docs/KNOWN_LIMITATIONS.md) describes practical bounds and unverified cases. [Progression](docs/PROGRESSION.md) lists actual unlocks and rates. The MIT license covers original mod code and artwork; Factorio is required and is not included.
 

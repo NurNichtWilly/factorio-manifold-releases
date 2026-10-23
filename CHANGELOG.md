@@ -1,3 +1,12 @@
+# 0.11.7 / 0.12.3 — 2026-10-23
+
+- Remove the Pattern Encoder entity, item and recipe, including existing save contents. Reconnect any network gap with conduits; recipe discovery and pins work without an encoder.
+- Support assembler and furnace recipes; idle furnaces use their last smelting recipe. Supply burner fuel separately.
+- Prefeed bounded batches instead of waiting for every individual craft round trip.
+- Add terminal crafting, attached-recipe search/order, click/Shift-click requests and recursive material previews; move detailed machine/recipe diagnostics behind a button.
+- Add storage sorting and concise component views with expandable diagnostics.
+- Fix component windows when a remote sandbox is on a different surface from the player's character.
+
 # 0.11.6 / 0.12.2 — 2026-10-21
 
 - Resolve world selection from the input event before opening a component. In a characterless sandbox, a highlighted entity may still be absent from `player.selected`.

@@ -1,15 +1,15 @@
-# Autocrafting — v0.6
+# Autocrafting
 
-Research Manifold autocrafting after Smart Manifold logistics and Automation 2: 200 red/green packs at 30 seconds. The encoder, crafting interface and CPU each cost ten steel plates and ten advanced circuits, taking three seconds. All are one-tile conducting network components with original graphics. The controller gates network operation; machines need their own electricity.
+Research Manifold autocrafting after Smart Manifold logistics and Automation 2: 200 red/green packs at 30 seconds. The crafting interface and CPU each cost ten steel plates and ten advanced circuits, taking three seconds. All are one-tile conducting network components with original graphics. The controller gates network operation; machines need their own electricity.
 
 ## Build and request
 
-1. Connect exactly one CPU, an encoder, storage and a terminal to a powered network.
-2. Put a crafting interface directly beside each assembler. Exactly one assembler may touch each interface. Multiple adjacent machines reject discovery and encoding; allow up to one second for endpoint refresh after placement changes.
-3. Choose recipes in native machine windows, remove modules and empty machine inputs/outputs. The encoder automatically discovers selected supported recipes on the first 32 interfaces. **Encode attached machine recipe** optionally pins the selected recipe and quality. A changed pinned recipe pauses discovery until restored or re-encoded. Existing v0.5 name-only encodings mean normal quality.
+1. Connect exactly one CPU, storage and a terminal to a powered network.
+2. Put a crafting interface directly beside each assembler or furnace. Exactly one assembler or furnace may touch each interface. Multiple adjacent machines reject discovery and encoding; allow up to one second for endpoint refresh after placement changes.
+3. For furnaces, run the desired smelting recipe once, then empty its input and output. The last used recipe is discovered while idle. Supply fuel separately for burner furnaces. Choose recipes in native machine windows, remove modules and empty machine inputs/outputs. The network automatically discovers selected supported recipes on the first 32 interfaces. **Pin attached machine recipe** optionally pins the selected recipe and quality. A changed pinned recipe pauses discovery until restored or pinned again. Existing v0.5 name-only encodings mean normal quality.
 4. Supply supported ingredients in cells or readable bus chests. Filters, circuit conditions and access policies apply.
-5. Open **Crafting requests** from a terminal, CPU, encoder or interface, or use `/manifold craft`. Choose an item, an unlocked quality and 1–1,000 additional items. Vanilla has normal quality. Standalone Quality and Space Age are independently supported.
-6. If multiple recipes make a needed item, click the desired recipe in the registry. This saves a CPU preference for that item and quality, including dependencies. **Clear preference** restores automatic selection when only one recipe exists. A missing preferred recipe rejects new requests; it never silently falls back. Duplicate machines for one recipe use the lowest interface ID. Selection does not load-balance machines or change recipes.
+5. Open **Crafting requests** from a terminal, CPU or interface, or use `/manifold craft`. Search the attached recipes, select an unlocked quality and click for one additional item or Shift-click for ten. The terminal has its own Crafting tab. The remote API accepts 1–1,000 additional items. Counts show recursively craftable additional items from available stock, capped at 1,000; stock already reserved by jobs is excluded. Vanilla has normal quality. Standalone Quality and Space Age are independently supported.
+6. If multiple recipes make a needed item, open **Recipes and diagnostics** and click the desired recipe. This saves a CPU preference for that item and quality, including dependencies. **Clear preference** restores automatic selection when only one recipe exists. A missing preferred recipe rejects new requests; it never silently falls back. Duplicate machines for one recipe use the lowest interface ID. Selection does not load-balance machines or change recipes.
 7. Watch machine diagnostics and job progress. Products and unused stock return to writable storage with room.
 
 For four normal transport belts, select normal gear and belt recipes in two assemblers, store six normal iron plates and request four normal belts. Two gear crafts precede two belt crafts. For rare belts, select rare recipes at both machines, store six rare iron plates and choose rare in the request panel. Existing intermediates of the requested quality reduce dependency work; existing final products never satisfy an additional-production request.
@@ -18,7 +18,7 @@ Recipe preferences belong to the physical CPU and survive native saves/configura
 
 ## Production monitoring
 
-The live registry displays the selected quality's recipes and marks unresolved ambiguity. Machine rows show attached entity IDs, usable recipes, discovery/encoding failures and native craft progress. A cap warning appears above 32 interfaces. Hover a job for its waiting reason, exact quality, completed and remaining machine crafts, elapsed seconds, seconds since the last item transfer/completed craft, physically counted escrow/transit, attached machine and actual machine progress/status. Progress bars count machine crafts rather than wall-clock estimates. These are not output-rate predictions or completion deadlines.
+The live registry displays the selected quality's recipes and marks unresolved ambiguity. Machine rows show attached entity IDs, usable recipes, discovery/encoding failures and native craft progress. A cap warning appears above 32 interfaces. Hover a job for its waiting reason, exact quality, completed and remaining machine crafts, elapsed seconds, seconds since the last item transfer/completed craft, physically counted escrow/transit, attached machine and actual machine progress/status. Job counters count collected machine crafts rather than wall-clock estimates. These are not output-rate predictions or completion deadlines.
 
 Offline local jobs remain visible/cancellable, but offline inspection exposes neither external stock nor discovered recipes. Completed elapsed time freezes at completion. v0.5 jobs retain their remaining plans; completed-craft counters begin when upgraded, since v0.5 did not record that history.
 
@@ -28,7 +28,7 @@ A bounded planner checks all dependencies before moving goods. Missing stock/pat
 
 Reservation transfers real supported stacks into a 128-slot engine-owned job inventory synchronously. The initial reserve may require at most 96 slots. Reserved goods leave storage and cannot be spent twice. Surplus intermediates are reused; excess products return physically. Machine feeds, collection and returns use one escrow stack per job, shortest routes, shared bidirectional edge/source capacity and tier/research latency. Delivery credits debit only actual insertion. Return targets account for matching item/quality transfers already admitted.
 
-Machines receive one craft's ingredients at a time and own delivered goods until collection. Manifold never manufactures scripted products, advances machine progress or supplies energy. Keep external inserters/players away from assigned inventories. Exclusive machine ownership prevents competing jobs from spending one machine's production. Each job runs dependencies sequentially; independent machines can service separate jobs.
+Machines receive bounded batches of ingredients, so a machine can start subsequent crafts while earlier output is being collected and own delivered goods until collection. Manifold never manufactures scripted products, advances machine progress or supplies energy. Keep external inserters/players away from assigned inventories. Exclusive machine ownership prevents competing jobs from spending one machine's production. Each job runs dependencies sequentially; independent machines can service separate jobs.
 
 ## Interruptions, cancellation and recovery
 
@@ -44,7 +44,7 @@ Native machine destruction can destroy machine-owned items. No replacement stock
 - First 32 interfaces, 32 drives and 32 buses by stable ID. Split larger networks.
 - Depth 16, 256 demand visits, 64 steps, 4,096 crafts and 96 initial reserve slots. Oversized requests reject before reservation.
 - One deterministic plain, nonspoilable item result and one to eight plain, nonspoilable item ingredients. Normal and available unlocked qualities use the same exact-quality rules.
-- No fluids, furnaces, probabilistic/byproduct recipes, spoilables, modules or positive quality bonuses. Random quality upgrades are not supported. No automatic machine recipe assignment, alternative-route/load-balanced production or global factory discovery.
+- No fluids, probabilistic/byproduct recipes, spoilables, modules or positive quality bonuses. Random quality upgrades are not supported. No automatic machine recipe assignment, alternative-route/load-balanced production or global factory discovery.
 - Multiplayer ordering is deterministic by construction, but two-client join/desync tests remain unverified.
 
 ## Integration API
@@ -58,4 +58,10 @@ The `manifold` remote interface exposes:
 - `crafting_cancel(player_index, device, job_id)` cancels locally, including offline.
 - `recover(player_index)` transfers only that force's recoverable goods.
 
-Mutation requests recheck player reach, force/surface ownership, online network and one CPU. Inspection checks reach/ownership, with local job visibility offline. No writable inventory references escape through the API. Interface discovery requires an encoder; already encoded patterns retain their existing v0.5 operation if the encoder is removed.
+Mutation requests recheck player reach, force/surface ownership, online network and one CPU. Inspection checks reach/ownership, with local job visibility offline. No writable inventory references escape through the API. Interface discovery and recipe pinning need no encoder.
+
+## Encoder removal (0.11.7 / 0.12.3)
+
+The Pattern Encoder entity, item and recipe have been removed. Factorio removes placed encoders and stored encoder items when an existing save loads with this version; there is no replacement or refund. If an encoder was connecting parts of a network, reconnect those parts with conduits. Existing interface pins, CPU preferences and job inventories remain. Old in-flight single-craft jobs finish their current craft before using batches.
+
+Batching reduces per-craft transport round trips; it does not promise 100% machine uptime. Shared bandwidth and latency still apply. Cancellation leaves all ingredients already delivered to the machine there, including prefed batch ingredients.
